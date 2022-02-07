@@ -528,6 +528,8 @@ padding: 50px;
   .digitacao {
     width: 14ch;
 
+  }
+  
   
 }
 
@@ -539,4 +541,12 @@ padding: 50px;
   .home__img{
     right: 10%;
   }
+}
+@media screen and (max-width: 450px){
+.form label,
+.form input,
+.form textarea,
+.form button {
+    width: 100%;
+}
 }
