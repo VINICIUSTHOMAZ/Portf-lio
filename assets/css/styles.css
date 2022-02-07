@@ -125,9 +125,9 @@ img{
   justify-content: center;
 }
 .digitacao {
-  width: 13ch;
-  height: 90px;
-  animation: typing 3s steps(40), blink .5s step-end infinite alternate;
+  width: 13.5ch;
+  height: 80px;
+  animation: typing 2s steps(40), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
