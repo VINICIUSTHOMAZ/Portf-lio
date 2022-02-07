@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+        <link rel="icon" type="image/x-icon" href="assets/img/tec.png">
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- =====BOX ICONS===== -->
@@ -173,11 +173,24 @@
                 <h2 class="section-title">Contato</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" id="inputNome" placeholder="Nome" class="contact__input">
-                        <input type="mail" id="inputEmail" placeholder="Email" class="contact__input">
-                        <textarea name="textAreaMensagem" placeholder="Escreva sua mensagem" id="textAreaMensagem" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form 
+                        action="https://formsubmit.co/vinicius.thomaz@hotmail.com"
+                        method="POST"
+                        class="form"
+                      >
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" required />
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required />
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" required></textarea>
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input
+                          type="hidden"
+                          name="_next"
+                          value="http://127.0.0.1:5500/obrigado.html"
+                        />
+                        <button type="submit" class="contact__button">Enviar</button>
                     </form>
                 </div>
             </section>

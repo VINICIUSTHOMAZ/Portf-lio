@@ -390,24 +390,66 @@ img{
 }
 
 /* ===== CONTACT =====*/
-.contact__input{
-  width: 100%;
+.form{
+  
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
-.contact__button{
+.form label,
+.form input,
+.form textarea,
+.form button {
   display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+  width: 40%;
 }
+.form label {
+  color: #010080;
+  line-height: 2;
+  margin-bottom: 0.3rem;
+}
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #FF6501;
+  box-shadow: 0 0 0 3px #FF6501;
+}
+.form button {
+  display: block;
+  padding: 1rem;
+  background: #010080;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
 
 /* ===== FOOTER =====*/
 .footer{
@@ -429,6 +471,27 @@ img{
   color: #fff;
   margin: 0 var(--mb-2)
 }
+/* ===== OBRIGADO =====*/
+.obrigado {
+vertical-align: middle;
+padding: 50px;
+
+}
+
+.obrigado img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 20px;
+
+}
+.obrigado h2{
+  text-align: center;
+  justify-content: center;
+  }
+
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
@@ -499,12 +562,8 @@ img{
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
   }
-  .contact__form{
-    width: 360px;
-  }
-  .contact__container{
-    justify-items: center;
-  }
+
+  
 }
 
 @media screen and (min-width: 1024px){
